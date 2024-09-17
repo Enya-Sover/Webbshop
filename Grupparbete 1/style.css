@@ -1,0 +1,98 @@
+header {
+    background-color: rgb(02, 18, 36);
+    color: white;
+    display: grid;
+    text-align: center;
+    padding: 0px;
+    font-family: "Open Sans", Arial, Lucida, sans-serif;
+    font-size: 2.2vw;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", Arial, Lucida, sans-serif;
+    min-height: 100vh;
+}
+
+.h1 {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 720px) {
+    .sidebar {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+}
+
+.innehåll {
+    flex-grow: 1;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Skapar tre lika breda kolumner */
+    gap: 10px; /* Mellanrum mellan rutorna */
+}
+
+.grid-container img {
+    width: 100%;
+    height: auto;
+}
+
+@media screen and (min-width: 720px) {
+    .allt {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .välkomsttext {
+        font-size: 3vw;
+    }
+
+    .sidebar {
+        display: flex;
+        flex-direction: column;
+        width: 200px;
+        height: 265vh;
+        border-right: 1px solid rgb(02, 18, 36);
+        margin-right: 20px;
+        padding: 20px;
+    }
+
+    .sidebar a {
+        margin: 10px;
+        padding: 5px;
+    }
+
+    .first {
+        display: grid;
+        align-items: center;
+    }
+
+    .grid-container img {
+        max-width: 400px;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+}
+
+.välkommen {
+    font-size: 1.5rem;
+    color: rgb(02, 18, 36);
+}
+
+.grid-container .produkt {
+    border: 2px solid black; /* Svart kant runt varje produkt */
+    padding: 10px; /* Lägger till lite utrymme mellan kanten och innehållet */
+    background-color: white; /* Vit bakgrund för produkterna */
+    box-sizing: border-box; /* Gör att padding inkluderas i totalbredden */
+    border-radius: 5%;
+    
+}
